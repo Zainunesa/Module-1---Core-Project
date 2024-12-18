@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #040046, #000000);
+    color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    animation: slideInFromTop 1s ease-in-out;
+}
+
+table {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background: 0.5rem;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+th{
+    background-color: #3333ff;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFFFFF;
+    text-align: center;
+}
+
+td {
+    padding: 12px 15px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #DDD;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tr:nth-child(even){
+    background-color: rgba(4, 0, 70, 0.8);
+}
+
+tr:nth-child(odd){
+    background-color: rgba(4, 0, 70, 0.6);
+}
+
+tr:hover {
+    background-color: #3334FF;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    background-color: #040046;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+button:hover{
+    background-color: #3333ff;
+    transform: scale(1.05);
+}
+
+button:active{
+    background-color: #3333ff;
+    transform: scale(1);
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Navbar start*/
+.navbar {
+  background-color: #040046;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.opened-nav {
+  background-color: #040046 !important;
+}
+.active {
+  color: white !important;
+  text-decoration: underline;
+}
+.nav-link {
+  color: white !important;
+  font-size: large;
+}
+.nav-link:hover {
+  color: white !important;
+  text-decoration: underline;
+}
+/* end */

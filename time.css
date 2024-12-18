@@ -1,0 +1,32 @@
+/* Navbar start*/
+.navbar {
+  background-color: #040046;
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.opened-nav {
+  background-color: #040046 !important;
+}
+.active {
+  color: white !important;
+  text-decoration: underline;
+}
+.nav-link {
+  color: white !important;
+  font-size: large;
+}
+.nav-link:hover {
+  color: white !important;
+  text-decoration: underline;
+}
+/* end */

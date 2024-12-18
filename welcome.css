@@ -1,0 +1,166 @@
+.main-banner {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  background-color: #040046;
+}
+.main-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #040046;
+  opacity: 0.6;
+  z-index: 0;
+}
+.banner-text {
+  z-index: 1;
+}
+.banner-text h1,
+.banner-text p {
+  color: white;
+  font-size: 3rem;
+}
+#hrCarousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.carousel-inner .carousel-item:hover img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.carousel-caption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.carousel-item:hover .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #007bff;
+}
+.carousel-item {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.carousel-inner {
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .main-banner {
+    height: 50vh;
+  }
+  .main-banner h1 {
+    font-size: 2rem;
+  }
+  .main-banner p {
+    font-size: 1rem;
+  }
+  .carousel-inner img {
+    height: 250px;
+  }
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .main-banner {
+    height: 40vh;
+  }
+  .banner-text h1 {
+    font-size: 1.5rem;
+  }
+  .banner-text p {
+    font-size: 0.8rem;
+  }
+  .carousel-inner img {
+    height: 200px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .modal-content {
+    padding: 20px;
+  }
+  .card-body i {
+    font-size: 4rem;
+  }
+}
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+}
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.modal-content {
+  border-radius: 10px;
+}
+
+/* new */
+.main-section {
+  position: relative;
+  height: 90vh;
+  z-index: 0;
+}
+
+#myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-text {
+  position: absolute;
+  bottom: 20%;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-button {
+  cursor: pointer;
+  z-index: 15;
+}

@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  height: 100vh;
+  /* Background Image for the Whole Page */
+  background-image: url("195384443_80e5a83e-0a99-494d-9489-4e89a8630084.jpg"); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the whole page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  background-color: #f4f4f4; /* Fallback color for unsupported images */
+}
+
+/* Header Styles */
+header {
+  background-color: #040046;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2 {
+  color: #040046;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+thead {
+  background-color: #040046;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+tr:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
+
+.background-color {
+  background-color: #040046;
+}
+
+#offcanvasLightNavbarLabel {
+  color: white;
+}
+
+.logout-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #040046;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #040046;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
